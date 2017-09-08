@@ -12,8 +12,8 @@
 </p>
 
 ## Description
-As many of you know, Slack is one of the major platforms used by ICO to be in touch with their community.
-However the free Slack has limited options and can be a danger to user new to the Crypto scene.
+As many of you know, Slack is one of the major platforms used by ICO to stay in touch with their community.
+However the free version of Slack has limited options and can be a danger to users new to the Crypto scene.
 Users get scammed every day and 1 such way is through Slack reminders. These will show up looking like an original message and lure users to send their coins.
 
 This scripts helps to prevent that by looking through all the reminders and removing those which are suspicious.
@@ -22,7 +22,7 @@ This scripts helps to prevent that by looking through all the reminders and remo
 - NodeJS 7+ https://nodejs.org
 - A git command line terminal
 - A computer/server to run the script on
-- An API key generated on https://api.slack.com with the following rights: `users:read`, `reminders:read`, `reminders.write`
+- An API key generated on https://api.slack.com/apps with the following rights: `users:read`, `reminders:read`, `reminders:write`
 
 ## How to install
 - Open a terminal/command
@@ -41,3 +41,7 @@ Example:
 - run once: `node index --apiKey Akhds923lkhHdL62139Dhad70Hdakhda`
 - 1 hour interval: `node index --apiKey Akhds923lkhHdL62139Dhad70Hdakhda --interval 3600`
 - 12 hour interval: `node index --apiKey Akhds923lkhHdL62139Dhad70Hdakhda --interval 43200`
+
+<p align="center">
+  <img src="https://github.com/CityOfZion/coz-slack-anti-reminder/blob/master/example-output.png">
+</p>
