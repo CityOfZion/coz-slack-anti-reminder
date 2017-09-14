@@ -8,7 +8,7 @@
 <h1 align="center">CoZ Slack Anti Reminder</h1>
 
 <p align="center">
-  Helps get rid of any reminders!
+  Helps get rid of any reminders in public channels!
 </p>
 
 ## Description
@@ -16,13 +16,14 @@ As many of you know, Slack is one of the major platforms used by ICO to stay in 
 However the free version of Slack has limited options and can be a danger to users new to the Crypto scene.
 Users get scammed every day and 1 such way is through Slack reminders. These will show up looking like an original message and lure users to send their coins.
 
-This scripts helps to prevent that by looking through all the reminders and removing those which are suspicious.
+This scripts helps to prevent that by deleting reminders from the chat in public channels and banning the user.
 
 ## Requirements
 - NodeJS 7+ https://nodejs.org
 - A git command line terminal
 - A computer/server to run the script on
-- An API key generated on https://api.slack.com/apps with the following rights: `users:read`, `reminders:read`, `reminders:write`
+- An API key generated on https://api.slack.com/apps
+- A bot user, and the Bot Api Token
 
 ## How to install
 - Open a terminal/command
@@ -35,12 +36,12 @@ To run the script you have to be in the directory where it is located.
 
 The script accepts the following parameters:
 - `--apiKey` or `-a` for the Slack API
-- `--interval` or `-i` for the interval at which to run the script in seconds
+- `--botToken` or `-t` for bot API Token
 
 Example:
-- run once: `node index --apiKey Akhds923lkhHdL62139Dhad70Hdakhda`
-- 1 hour interval: `node index --apiKey Akhds923lkhHdL62139Dhad70Hdakhda --interval 3600`
-- 12 hour interval: `node index --apiKey Akhds923lkhHdL62139Dhad70Hdakhda --interval 43200`
+`node index --apiKey xoxp-244983222967-240243914928-241034170773-f1fe3b5bd448e86b9914332fe10171b6 --botToken xoxb-241985022151-oxax9EdKmz4BY9xHAkhO1C2R`
+
+<strong>Make sure to invite the bot into your public channels!</strong>
 
 <p align="center">
   <img src="https://github.com/CityOfZion/coz-slack-anti-reminder/blob/master/example-output.png">
