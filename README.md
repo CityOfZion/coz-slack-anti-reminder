@@ -25,6 +25,11 @@ This scripts helps to prevent that by deleting reminders from the chat in public
 - An API key generated on https://api.slack.com/apps
 - A bot user, and the Bot Api Token
 
+**Use the following permissions**
+<p align="center">
+  <img src="https://github.com/CityOfZion/coz-slack-anti-reminder/blob/master/permissions.png">
+</p>
+
 ## How to install
 - Open a terminal/command
 - First clone this repo into a directory with `git clone https://github.com/CityOfZion/coz-slack-anti-reminder.git`
